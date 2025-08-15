@@ -4,18 +4,20 @@ import SectionWrapper from "@/components/main/SectionWrapper";
 import About from "@/components/main/About";
 import Service   from "@/components/main/Service";
 import Why from "@/components/main/Why";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
     <div className="">
       <main className="m-0 p-0">
-        <Hero/>
-
+          <Hero/>
           <SectionWrapper/>
           <About/>
           <Service/>
           <Why/>
+          <section className={"container/faq flex "} data-slot="faq">
 
+          </section>
       </main>
 
     </div>

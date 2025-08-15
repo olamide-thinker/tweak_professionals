@@ -6,6 +6,7 @@ import {
     CardHeader,
     CardTitle
 } from "@/components/ui/card"
+import CallToAction from "@/components/CallToAction";
 
 const services = [
     {
@@ -62,6 +63,20 @@ const Service = () => {
                     </Card>
                 ))}
             </div>
+
+              <div className={"flex mx-auto mt-32 gap-4"}>
+                  <CallToAction
+
+                      header="Ready to Optimize Your Business?"
+                      content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
+                      action="Request A Proposal"
+                  />
+                  <CallToAction
+                      header="Ready to Optimize Your Business?"
+                      content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
+                      action="Request A Proposal"
+                  />
+              </div>
             </section>
         </div>
     )
