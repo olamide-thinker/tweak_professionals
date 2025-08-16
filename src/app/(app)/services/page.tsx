@@ -24,7 +24,10 @@ const Page = () => {
 
 
             <div className={" relative "} data-slot="">
-                <SectionWrapper/>
+                <SectionWrapper
+                    headingLines={["Service", "Offering"]}
+
+                />
                 <Image
                     src={dot}
                     alt="dot"

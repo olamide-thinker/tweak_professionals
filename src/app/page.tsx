@@ -7,6 +7,7 @@ import Why from "@/components/main/Why";
 import dot from "../../public/images/main/dot.png"
 import CallToAction from "@/components/CallToAction";
 import Quote from "@/components/main/Quote"
+import sectionImage from '../../public/images/main/sectionImage.png'
 // import Footer from "@/components/Footer"
 
 export default function Home() {
@@ -14,7 +15,15 @@ export default function Home() {
     <div className="">
       <main className="m-0 p-0">
           <Hero/>
-          <SectionWrapper/>
+          <SectionWrapper
+              headingLines={["STRATEGIC", "SOLUTIONS", "FOR BUSINESS", "GROWTH"]}
+              highlight="Tweak Professional:"
+              description="Your Partner in Human Capital Development, Recruitment, and Strategic Business Excellence."
+              buttonText="REQUEST A PROPOSAL"
+              buttonHref="/contact"
+              image={sectionImage}
+              imageAlt="Business Growth"
+              />
           <div className={" mt-52 relative "} data-slot="">
 
               <Image

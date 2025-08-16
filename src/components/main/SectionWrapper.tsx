@@ -1,45 +1,83 @@
-import Image from "next/image";
-import sectionImage from "../../../public/images/main/sectionImage.png";
+import Image, { StaticImageData } from "next/image";
 
-const SectionWrapper = () => {
+type SectionWrapperProps = {
+    headingLines: string[]; // ["STRATEGIC", "SOLUTIONS", ...]
+    description?: string; // Paragraph text
+    highlight?: string; // e.g., "Tweak Professional:"
+    buttonText?: string; // e.g., "REQUEST A PROPOSAL"
+    buttonHref?: string; // optional link
+    image?: StaticImageData; // Next.js static image import
+    imageAlt?: string; // accessibility alt
+};
+
+const SectionWrapper = ({
+                            headingLines,
+                            description,
+                            highlight,
+                            buttonText,
+                            buttonHref = "#",
+                            image,
+                            imageAlt = "Section Image",
+                        }: SectionWrapperProps) => {
     return (
-
-        <section className="">
-            <div className="flex flex-col   lg:flex-row items-start justify-between ">
-
+        <section>
+            <div className="flex flex-col lg:flex-row items-start justify-between">
                 {/* Left Content */}
-                <div className="relative flex -top-[70px]  flex-col z-20">
+                <div className="relative flex -top-[70px] flex-col z-20">
                     {/* Heading */}
                     <div className="flex flex-col z-10">
-                        {["Get In Touch With", "Tweak Professionals"].map(
-                            (line, index) => (
-                                <span
-                                    key={index}
-                                    className="p-6 bg-background shadow-md text-6xl lg:text-8xl w-fit font-extrabold text-primary tracking-widest"
-                                >
-                                    {line}
-                                </span>
-                            )
-                        )}
+                        {headingLines.map((line, index) => (
+                            <span
+                                key={index}
+                                className="p-6 bg-background shadow-md text-6xl lg:text-8xl w-fit font-extrabold text-primary tracking-tight"
+                            >
+                {line}
+              </span>
+                        ))}
                     </div>
 
                     {/* Paragraph */}
                     <div className="text-primary mt-8 max-w-[60rem]">
                         <p className="text-2xl lg:text-3xl ">
-                            {/*<span className="text-accent-foreground font-semibold">*/}
-                            {/*    Tweak Professional:*/}
-                            {/*</span>{" "}*/}
-                            With over 5 years of excellence, Tweak Professional is dedicated to empowering businesses through strategic Human Capital Management, Recruitment, Learning & Development, and General Business Solutions. Our mission is to deliver tailored, impactful solutions that drive sustainable growth and foster organizational success. We pride ourselves on integrity, client-centricity, and a passion for excellence.
-                            Our team brings together diverse expertise to provide a holistic approach to your business challenges, ensuring you achieve your strategic objectives. We believe in building long-term partnerships based on trust, transparency, and a shared commitment to achieving your business goals.
+                            {highlight && (
+                                <span className="text-accent-foreground font-semibold">
+                {highlight} {" "}
+              </span>
+                            )}
+                            {description}
                         </p>
+                        {/* Layered Button */}
+                        {buttonText && (
 
+                            <div className="relative w-fit mt-8 group">
+                        {/* Background blocks */}
+                        <div className="absolute top-1 -left-2 w-full h-full bg-primary/50 rounded-md -z-10"></div>
+                        <div className="absolute -top-2 left-2 w-full h-full bg-accent-foreground rounded-md -z-20"></div>
 
+                        {/* Button */}
+                        <a
+                            href={buttonHref}
+                            className="relative w-fit bg-black text-accent-foreground px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition flex items-center gap-2"
+                        >
+                            {buttonText} <span className="inline-block">→</span>
+                        </a>
+                    </div>
+                        )}
                     </div>
                 </div>
 
+                {/* Right Image */}
+                {image && (
+                    <div className="relative self-start lg:self-start lg:ml-auto lg:mt-[2rem] lg:mr-[10rem]">
+                        <Image
+                            src={image}
+                            alt={imageAlt}
+                            className="max-w-xs lg:max-w-sm h-auto object-contain"
+                        />
+                    </div>
+                )}
             </div>
         </section>
-
     );
 };
 

@@ -5,6 +5,7 @@ import Mission from "@/components/about/mission";
 import Team from "@/components/about/team";
 import CallToAction from "@/components/CallToAction";
 import dot from "../../../../public/images/about/dot.png";
+import ContactForm from "@/app/(app)/contact_us/contact_form";
 
 
 const Page = () => {
@@ -24,7 +25,10 @@ const Page = () => {
 
 
             <div className={" relative "} data-slot="">
-                <SectionWrapper/>
+                <SectionWrapper
+                    headingLines={["Get in Touch with", "Tweak Professional"]}
+                    description="Ready to discuss your business needs? Fill out the form below or contact us directly. We are eager to understand your challenges and propose strategic solutions tailored for your success."
+                />
                 <Image
                     src={dot}
                     alt="dot"
@@ -32,11 +36,8 @@ const Page = () => {
                     priority
                     className=" absolute  h-[100%] object-cover object-center"
                 />
+                <ContactForm/>
 
-
-
-            <Mission/>
-           
             <div className={"flex mx-auto mt-32 gap-4"}>
                 <section>
 

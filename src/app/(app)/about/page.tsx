@@ -5,6 +5,7 @@ import Mission from "@/components/about/mission";
 import Team from "@/components/about/team";
 import CallToAction from "@/components/CallToAction";
 import dot from "../../../../public/images/about/dot.png";
+import sectionImage from "../../../../public/images/main/sectionImage.png";
 
 
 const Page = () => {
@@ -24,7 +25,11 @@ const Page = () => {
 
 
             <div className={" relative "} data-slot="">
-                <SectionWrapper/>
+                <SectionWrapper
+                    headingLines={["About"]}
+                    description="With over 5 years of excellence, Tweak Professional is dedicated to empowering businesses through strategic Human Capital Management, Recruitment, Learning & Development, and General Business Solutions. Our mission is to deliver tailored, impactful solutions that drive sustainable growth and foster organizational success. We pride ourselves on integrity, client-centricity, and a passion for excellence.
+Our team brings together diverse expertise to provide a holistic approach to your business challenges, ensuring you achieve your strategic objectives. We believe in building long-term partnerships based on trust, transparency, and a shared commitment to achieving your business goals."
+                />
                 <Image
                     src={dot}
                     alt="dot"
