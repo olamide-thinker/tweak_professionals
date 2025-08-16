@@ -8,6 +8,10 @@ import {
 } from "@/components/ui/card"
 import Image from "next/image";
 import whyImage from "../../../public/images/main/why.png";
+import hero from "../../../public/images/hero/heroBg.png";
+
+import Quote from "@/components/main/Quote";
+
 
 const why = [
     {
@@ -37,7 +41,8 @@ const why = [
 
 const Why = () => {
     return (
-        <div className={"container/service mt-52"} data-slot="service">
+        <div className={"container/service mt-52 relative "} data-slot="service">
+
             <section className={"flex flex-col gap-4"}>
                 <p className="text-primary text-6xl max-w-5xl  lg:text-8xl font-bold mb-4">
                     Why Choose
@@ -72,6 +77,8 @@ const Why = () => {
                         </Card>
                     ))}
                 </div>
+
+
             </section>
         </div>
     )

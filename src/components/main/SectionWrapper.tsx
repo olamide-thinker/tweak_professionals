@@ -11,7 +11,7 @@ const SectionWrapper = () => {
                 <div className="relative flex -top-[70px]  flex-col z-20">
                     {/* Heading */}
                     <div className="flex flex-col z-10">
-                        {["STRATEGIC", "SOLUTIONS", "FOR BUSINESS", "GROWTH"].map(
+                        {["Get In Touch With", "Tweak Professionals"].map(
                             (line, index) => (
                                 <span
                                     key={index}
@@ -25,36 +25,18 @@ const SectionWrapper = () => {
 
                     {/* Paragraph */}
                     <div className="text-primary mt-8 max-w-[60rem]">
-                        <p className="text-2xl lg:text-3xl font-bold">
-                            <span className="text-accent-foreground font-semibold">
-                                Tweak Professional:
-                            </span>{" "}
-                            Your Partner in Human Capital Development, Recruitment, and
-                            Strategic Business Excellence.
+                        <p className="text-2xl lg:text-3xl ">
+                            {/*<span className="text-accent-foreground font-semibold">*/}
+                            {/*    Tweak Professional:*/}
+                            {/*</span>{" "}*/}
+                            With over 5 years of excellence, Tweak Professional is dedicated to empowering businesses through strategic Human Capital Management, Recruitment, Learning & Development, and General Business Solutions. Our mission is to deliver tailored, impactful solutions that drive sustainable growth and foster organizational success. We pride ourselves on integrity, client-centricity, and a passion for excellence.
+                            Our team brings together diverse expertise to provide a holistic approach to your business challenges, ensuring you achieve your strategic objectives. We believe in building long-term partnerships based on trust, transparency, and a shared commitment to achieving your business goals.
                         </p>
 
-                        {/* Layered Button */}
-                        <div className="relative w-fit mt-8 group">
-                            {/* Background blocks */}
-                            <div className="absolute top-1 -left-2 w-full h-full bg-primary/50 rounded-md -z-10"></div>
-                            <div className="absolute -top-2 left-2 w-full h-full bg-accent-foreground rounded-md -z-20"></div>
 
-                            {/* Button */}
-                            <button className="relative w-fit bg-black text-accent-foreground px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition flex items-center gap-2">
-                                REQUEST A PROPOSAL <span className="inline-block">→</span>
-                            </button>
-                        </div>
                     </div>
                 </div>
 
-                {/* Right Image */}
-                <div className="relative self-start lg:self-start lg:ml-auto lg:mt-[2rem] lg:mr-[10rem]">
-                    <Image
-                        src={sectionImage}
-                        alt="Business Growth"
-                        className="max-w-xs lg:max-w-sm h-auto object-contain"
-                    />
-                </div>
             </div>
         </section>
 
