@@ -6,6 +6,7 @@ import Team from "@/components/about/team";
 import CallToAction from "@/components/CallToAction";
 import dot from "../../../../public/images/about/dot.png";
 import ServiceSection from "@/app/(app)/services/services";
+import IndustrySection from "@/app/(app)/industries/industries";
 
 
 const Page = () => {
@@ -26,8 +27,8 @@ const Page = () => {
 
             <div className={" relative "} data-slot="">
                 <SectionWrapper
-                    headingLines={["Service", "Offering"]}
-                    description={'Tweak Professional offers a full spectrum of consulting services designed to address your most critical business challenges and propel your organization forward.'}
+                    headingLines={["Industries", "We Serve"]}
+
 
                 />
                 <Image
@@ -40,7 +41,7 @@ const Page = () => {
 
 
 
-            <ServiceSection/>
+            <IndustrySection/>
 
             <div className={"flex mx-auto mt-32 gap-4"}>
                 <section>

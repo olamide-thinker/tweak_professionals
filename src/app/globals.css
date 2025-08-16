@@ -18,7 +18,8 @@
   --primary: oklch(0.205 0 0);
   /*--primary-foreground: #121212;*/
   --accent: oklch(0.97 0 0);
-  --accent-foreground: #F0BC73;
+  --accent-foreground: #FBFCCF;
+  /*F0BC73;*/
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

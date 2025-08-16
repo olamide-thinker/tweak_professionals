@@ -64,17 +64,19 @@ const Service = () => {
                 ))}
             </div>
 
-              <div className={"flex mx-auto mt-32 gap-4"}>
+              <div className={"flex w-full mt-32 gap-4"}>
                   <CallToAction
 
+                      className={"flex-1"}
                       header="Ready to Optimize Your Business?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
-                      action="Request A Proposal"
+                      action="Get A Free Consultation"
                   />
                   <CallToAction
-                      header="Ready to Optimize Your Business?"
+
+                      header="Have a question?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
-                      action="Request A Proposal"
+                      action="Contact Us"
                   />
               </div>
             </section>

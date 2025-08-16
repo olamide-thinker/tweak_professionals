@@ -2,13 +2,14 @@ interface CardProps {
     header: string;
     content: string;
     action: string;
+    className?: string;
 }
 
-const CallToAction = ({ header, content, action }: CardProps) => {
+const CallToAction = ({ header, className, content, action }: CardProps) => {
     return (
-        <div className="bg-primary text-accent-foreground p-8 rounded-lg flex flex-col gap-6 max-w-3xl">
+        <div className={`bg-primary ${className}  text-accent-foreground justify-between p-8 rounded-lg flex flex-col gap-6 w-fit`}>
             {/* Header */}
-            <h1 className="text-4xl w-full  sm:max-w-none  md:text-6xl font-bold leading-snug max-w-xl">
+            <h1 className="text-4xl max-w-xl md:text-6xl font-bold leading-snug ">
                 {header}
             </h1>
 
