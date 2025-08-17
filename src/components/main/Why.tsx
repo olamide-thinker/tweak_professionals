@@ -65,13 +65,13 @@ const Why = () => {
                             </div>
                             <div className={"flex justify-center gap-2 flex-col "} style={{ height: "100%"}}>
                                 <CardHeader>
-                                    <CardTitle className=" md:text-4xl text-5xl">
+                                    <CardTitle className=" text-4xl lg:text-6xl">
                                         {service.title}
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="flex gap-4">
-                                    <div className="w-1 self-stretch bg-accent-foreground"></div>
-                                    <p className="text-2xl">{service.content}</p>
+                                    <div className="w-1 self-stretch bg-primary"></div>
+                                    <p className="text-2xl lg:text-3xl">{service.content}</p>
                                 </CardContent>
                             </div>
                         </Card>

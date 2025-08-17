@@ -17,7 +17,7 @@ const Nav = () => {
             <ul className="hidden space-x-6 md:flex gap-6 text-gray-700">
                 {navLinks.map((link, index) => (
                     <li key={index}>
-                        <Link href={link.href} className="font-bold hover:text-accent-foreground">
+                        <Link href={link.href} className="font-bold text-3xl hover:text-accent-foreground">
                             {link.label}
                         </Link>
                     </li>

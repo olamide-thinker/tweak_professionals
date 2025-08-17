@@ -9,7 +9,7 @@ const About = () => {
             <div className="flex-1 max-w-3xl">
                 <h3 className="text-primary text-6xl lg:text-8xl font-bold mb-4">Who We Are</h3>
 
-                <p className="mb-6 text-xl text-gray-700 leading-tight">
+                <p className="mb-6 text-3xl text-gray-700 leading-tight">
                     For over 5 years, Tweak Professional Consulting has been at the forefront of delivering bespoke human capital and business solutions. We partner with leading organizations to unlock their full potential, optimize performance, and drive sustainable growth. Our approach is rooted in deep industry insights, a commitment to excellence, and a client-centric philosophy that ensures every strategy is tailored to your unique challenges and objectives.
                 </p>
 

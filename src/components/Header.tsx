@@ -8,8 +8,8 @@ const Header = () => {
 
                 {/* Logo / Brand */}
                 <Link href="/" className="text-primary leading-tight">
-                    <span className="block text-4xl font-bold">Tweak</span>
-                    <span className="block text-4xl font-bold">Professionals</span>
+                    <span className="block text-5xl font-bold">Tweak</span>
+                    <span className="block text-5xl font-bold">Professionals</span>
                     <span className="block text-3xl font-normal">Consult</span>
                 </Link>
 

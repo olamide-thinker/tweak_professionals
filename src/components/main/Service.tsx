@@ -26,8 +26,8 @@ const services = [
             " for your organization."
     },
     {
-        title: "Learning &\n" +
-            "Development",
+        title: "Learning \n" +
+            "& Development",
         // description: "Boost your visibility in search engines.",
         content: "Customized training programs and\n" +
             " workshops for skill enhancement\n" +
@@ -54,12 +54,12 @@ const Service = () => {
                 {services.map((service, index) => (
                     <Card key={index} className="hover:shadow-2xl rounded-none transition-shadow">
                         <CardHeader>
-                            <CardTitle className={" md:text-4xl text-5xl"}>{service.title}</CardTitle>
+                            <CardTitle className={" text-4xl lg:text-6xl"}>{service.title}</CardTitle>
                             {/*<CardDescription>{service.description}</CardDescription>*/}
                         </CardHeader>
                         <CardContent  className={" flex gap-4 ml-8 max-w-md"}>
-                            <div className="block w-1 self-stretch bg-accent-foreground"></div>
-                            <p className={"md:text-2xl"}>{service.content}</p>
+                            <div className="block w-1 self-stretch bg-primary"></div>
+                            <p className={"text-2xl lg:text-3xl"}>{service.content}</p>
                         </CardContent>
                     </Card>
                 ))}
@@ -77,15 +77,15 @@ const Service = () => {
               <div className={"flex flex-col lg:flex-row w-full mt-32 gap-4"}>
                   <CallToAction
 
-                      className={"flex-1 w-[40rem]"}
+                      className={"flex-1 justify-between w-[40rem]"}
                       header="Ready to Optimize Your Business?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                       action="Get A Free Consultation"
                   />
                   <CallToAction
-                      className={"w-[30rem]"}
+                      className={"w-fit justify-around"}
 
-                      header="Have a question?"
+                      header={`Have a \n question?`}
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                       action="Contact Us"
                   />

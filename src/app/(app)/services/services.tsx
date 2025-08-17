@@ -82,7 +82,7 @@ const ServiceSection = () => {
                             className="hover:shadow-2xl h-fit rounded-none transition-shadow"
                         >
                             <CardHeader className="flex flex-col gap-4">
-                                <CardTitle className="text-4xl md:text-3xl lg:text-4xl">
+                                <CardTitle className="text-4xl lg:text-6xl">
                                     {item.title}
                                 </CardTitle>
                                 {/*<CardDescription className="text-lg md:text-xl">*/}
@@ -93,9 +93,9 @@ const ServiceSection = () => {
                             {/* Line + Content wrapper */}
                             <CardContent className="flex gap-4 ml-6">
                                 {/* vertical line that stretches full height */}
-                                <div className="w-1 bg-accent-foreground"></div>
+                                <div className="w-1 bg-primary"></div>
 
-                                <div className="flex flex-col gap-4 text-lg md:text-xl">
+                                <div className="flex flex-col gap-4 md:text-3xl">
                                     {/* description */}
                                     <p>{item.description}</p>
 

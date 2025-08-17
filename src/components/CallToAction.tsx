@@ -19,17 +19,17 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
     return (
         <div className={`bg-primary ${className}     text-accent-foreground  p-8 rounded-lg flex flex-col gap-6 `}>
             {/* Header */}
-            <h1 className="text-4xl max-w-xl md:text-6xl font-bold leading-snug ">
+            <h1 className=" max-w-xl text-6xl font-bold leading-snug ">
                 {header}
             </h1>
 
             {/* Content + Button */}
             {}
-            <div className="flex relative flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="flex relative flex-col lg:items-end   md:flex-row md:items-center md:justify-between gap-6">
                 {typeof content === "string" && (
-                <div className="flex gap-2 max-w-[15rem] ">
+                <div className="flex gap-2 max-w-[28rem] ">
                     <div className="block w-1.5 self-stretch bg-accent-foreground"></div>
-                    <p className="text-sm font-light leading-relaxed">{content}</p>
+                    <p className="text-2xl font-light leading-relaxed">{content}</p>
                 </div>
                 )}
                 <div className="absolute bg-primary/20 rounded-lg -top-5 right-0 w-fit p-4">
@@ -61,7 +61,7 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
                                 <Image
                                 src={z.icon as string | StaticImport}
                                   alt={z.title} width={24} height={24} className="w-8 h-8 "/>
-                                <p className="text-xl font-light leading-relaxed">{z.link}</p>
+                                <p className="text-2xl font-light leading-relaxed">{z.link}</p>
                             </div>
                         ))}
                     </div>
@@ -69,10 +69,10 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
 
                 {action && (
                     <button
-                        className="flex w-fit items-center gap-2 sm:w-fit text-lg md:text-xl
+                        className="flex w-fit items-center gap-2 text-3xl
                   bg-transparent border border-accent-foreground
                   text-accent-foreground px-6 py-3 rounded-md
-                  font-semibold hover:bg-accent-foreground hover:text-black transition-colors"
+                  font-semibold hover:bg-accent-foreground hover:text-black transition-colors  "
                     >
                         {action}
                         <svg

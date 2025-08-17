@@ -60,14 +60,14 @@ const Mission = () => {
                     {mission.map((service, index) => (
                         <Card key={index} className="hover:shadow-2xl h-fit rounded-none transition-shadow">
                             <CardHeader>
-                                <CardTitle className="md:text-4xl text-6xl">{service.title}</CardTitle>
+                                <CardTitle className="text-5xl lg:text-6xl">{service.title}</CardTitle>
                                 {/* <CardDescription>{service.description}</CardDescription> */}
                             </CardHeader>
 
                             <CardContent className="flex gap-4 ml-8">
                                 <div className="block w-1 self-stretch bg-accent-foreground"></div>
 
-                                <div className="md:text-2xl">
+                                <div className="md:text-3xl">
                                     {/* If content is a string */}
                                     {typeof service.content === "string" && <p>{service.content}</p>}
 

@@ -94,7 +94,7 @@ const IndustrySection = () => {
                             className="hover:shadow-2xl h-fit rounded-none transition-shadow"
                         >
                             <CardHeader className="flex flex-col gap-4">
-                                <CardTitle className="text-4xl md:text-3xl lg:text-4xl">
+                                <CardTitle className="text-4xl lg:text-6xl">
                                     {item.title}
                                 </CardTitle>
                                 {/*<CardDescription className="text-lg md:text-xl">*/}
@@ -107,12 +107,12 @@ const IndustrySection = () => {
                                 {/* vertical line that stretches full height */}
                                 <div className="w-1 bg-accent-foreground"></div>
 
-                                <div className="flex flex-col gap-4 text-lg md:text-xl">
+                                <div className="flex flex-col gap-4 text-3xl md:text-xl">
                                     {/* description */}
-                                    <p>{item.description}</p>
+                                    <p className={'text-3xl'}>{item.description}</p>
 
                                     {/* bullet list */}
-                                    <ul className="list-disc list-inside space-y-2">
+                                    <ul className="list-disc text-3xl  list-inside space-y-2">
                                         {item.content.map((val, i) => (
                                             <li key={i}>{val.name}</li>
                                         ))}

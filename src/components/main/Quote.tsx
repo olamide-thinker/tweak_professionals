@@ -42,8 +42,8 @@ export function Quote() {
                             className="  basis-full sm:basis-1/2 lg:basis-1/3"
                         >
                             <div className="p-4">
-                                <div className="relative bg-primary text-white p-6 h-[15rem] w-fit flex flex-col justify-between">
-                                    <p className="max-w-xl  text-2xl leading-relaxed">{quote.text}</p>
+                                <div className="relative bg-primary gap-4  text-white p-6 h-[20rem] w-fit flex flex-col justify-between">
+                                    <p className="max-w-xl  text-2xl lg:text-3xl leading-relaxed">{quote.text}</p>
                                     <p className="mt-4 font-semibold">{quote.author}</p>
 
                                     {/* Right-angled triangle tail */}

@@ -29,7 +29,7 @@ const SectionWrapper = ({
                         {headingLines.map((line, index) => (
                             <span
                                 key={index}
-                                className="p-6 bg-background shadow-md text-6xl lg:text-8xl w-fit font-extrabold text-primary tracking-tight"
+                                className="p-6 bg-background shadow-md text-7xl lg:text-8xl w-fit font-extrabold text-primary tracking-tight"
                             >
                 {line}
               </span>
@@ -57,7 +57,7 @@ const SectionWrapper = ({
                         {/* Button */}
                         <a
                             href={buttonHref}
-                            className="relative w-fit bg-black text-accent-foreground px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition flex items-center gap-2"
+                            className="relative w-fit text-3xl bg-black text-accent-foreground px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition flex items-center gap-2"
                         >
                             {buttonText} <span className="inline-block">→</span>
                         </a>
