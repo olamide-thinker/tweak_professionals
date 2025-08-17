@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 const Header = () => {
     return (
         <header className="w-full shadow-md">
-            <section className="flex bf-red-500 flex-row justify-between  px-4 py-3">
+            <section className="flex  flex-row justify-between  px-4 py-3">
 
                 {/* Logo / Brand */}
                 <Link href="/" className="text-primary leading-tight">

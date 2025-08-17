@@ -17,12 +17,10 @@ const Hero = () => {
             />
 
             {/* Content on top */}
+            <section>
             <div
-                className="absolute z-10 text-primary"
-                style={{
-                    top: "10%",   // moves up from the bottom by % of the container height
-                    left: "5%",     // aligns with your 10% container padding
-                }}
+                className="absolute z-10  top-[10rem]   text-primary"
+
             >
                 <CallToAction
                     header="Ready to Optimize Your Business?"
@@ -32,12 +30,10 @@ const Hero = () => {
             </div>
 
 
+
             <div
-                className="absolute z-10 text-primary"
-                style={{
-                    bottom: "10%",   // moves up from the bottom by % of the container height
-                    left: "5%",     // aligns with your 10% container padding
-                }}
+                className="absolute z-10 -bottom-[90rem] text-primary"
+
             >
                 <NoAction
                     content={[
@@ -49,6 +45,7 @@ const Hero = () => {
                 />
             </div>
 
+            </section>
 
 
 

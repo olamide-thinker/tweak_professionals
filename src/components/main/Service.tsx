@@ -7,6 +7,7 @@ import {
     CardTitle
 } from "@/components/ui/card"
 import CallToAction from "@/components/CallToAction";
+import Link from "next/link";
 
 const services = [
     {
@@ -62,17 +63,27 @@ const Service = () => {
                         </CardContent>
                     </Card>
                 ))}
+                <Link
+                    href="/"
+                    className="inline-flex w-fit font-bold bg-accent-foreground p-2 items-center gap-2 text-primary  hover:underline"
+                >
+                    View All Services
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6V8H12V10H14V8H16V6H14V4H12V6H0ZM10 2H12V4H10V2ZM10 2H8V0H10V2ZM10 12H12V10H10V12ZM10 12H8V14H10V12Z" fill="black"/>
+                    </svg>
+                </Link>
             </div>
 
-              <div className={"flex w-full mt-32 gap-4"}>
+              <div className={"flex flex-col lg:flex-row w-full mt-32 gap-4"}>
                   <CallToAction
 
-                      className={"flex-1"}
+                      className={"flex-1 w-[40rem]"}
                       header="Ready to Optimize Your Business?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                       action="Get A Free Consultation"
                   />
                   <CallToAction
+                      className={"w-[30rem]"}
 
                       header="Have a question?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."

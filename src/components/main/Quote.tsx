@@ -29,27 +29,28 @@ const quotes: QuoteType[] = [
 
 export function Quote() {
     return (
-        <div className=" w-[110rem]  mx-auto flex flex-col gap-4 mt-20 px-4">
+        <section>
+        <div className="  m-10  lg:mx-auto flex flex-col gap-4 mt-20 px-4">
             <p className="text-primary text-4xl sm:text-6xl max-w-5xl lg:text-8xl font-bold mb-4">
-                What they said about us
+                What they said <br/> about us
             </p>
             <Carousel opts={{ align: "start" }} className="w-full">
                 <CarouselContent>
                     {quotes.map((quote, index) => (
                         <CarouselItem
                             key={index}
-                            className="basis-full sm:basis-1/2 lg:basis-1/3"
+                            className="  basis-full sm:basis-1/2 lg:basis-1/3"
                         >
                             <div className="p-4">
-                                <div className="relative bg-black text-white p-6 h-[15rem] w-full flex flex-col justify-between">
-                                    <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed">{quote.text}</p>
+                                <div className="relative bg-primary text-white p-6 h-[15rem] w-fit flex flex-col justify-between">
+                                    <p className="max-w-xl  text-2xl leading-relaxed">{quote.text}</p>
                                     <p className="mt-4 font-semibold">{quote.author}</p>
 
                                     {/* Right-angled triangle tail */}
                                     <div
-                                        className="absolute left-0 -bottom-6 w-0 h-0
+                                        className="absolute  left-0 -bottom-10 w-0 h-0
                                         border-l-[0px] border-l-transparent
-                                        border-t-[32px] border-t-black
+                                        border-t-[32px] border-t-primary
                                         border-r-[32px] border-r-transparent"
                                     />
                                 </div>
@@ -61,6 +62,7 @@ export function Quote() {
                 <CarouselNext />
             </Carousel>
         </div>
+        </section>
     )
 }
 

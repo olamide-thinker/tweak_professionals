@@ -3,12 +3,12 @@ import Link from "next/link";
 const Nav = () => {
     const navLinks = [
         { label: "Home", href: "/" },
-        { label: "Page Us", href: "/about" },
+        { label: "About Us", href: "/about" },
         { label: "Services", href: "/services" },
         { label: "Industries", href: "/industries" },
         { label: "Case Studies", href: "/case-studies" },
-        { label: "Contact Us", href: "/contact-us" },
-        { label: "Contact", href: "/contact" },
+        { label: "Contact Us", href: "/contact_us" },
+
     ];
 
     return (
@@ -17,7 +17,7 @@ const Nav = () => {
             <ul className="hidden space-x-6 md:flex gap-6 text-gray-700">
                 {navLinks.map((link, index) => (
                     <li key={index}>
-                        <Link href={link.href} className="font-bold hover:text-blue-500">
+                        <Link href={link.href} className="font-bold hover:text-accent-foreground">
                             {link.label}
                         </Link>
                     </li>

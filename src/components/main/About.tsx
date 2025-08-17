@@ -4,7 +4,7 @@ import about from "../../../public/images/main/about.png";
 
 const About = () => {
     return (
-        <section className="flex flex-col lg:flex-row items-center w-full justify-between gap-8">
+        <section className="flex flex-col lg:flex-row items-center w-full justify-between lg:space-y-0 space-y-6 gap-8">
             {/* Left Content */}
             <div className="flex-1 max-w-3xl">
                 <h3 className="text-primary text-6xl lg:text-8xl font-bold mb-4">Who We Are</h3>
@@ -15,28 +15,17 @@ const About = () => {
 
                 <Link
                     href="/"
-                    className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                    className="inline-flex font-bold bg-accent-foreground p-2 items-center gap-2 text-primary  hover:underline"
                 >
                     Discover our story
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className="w-5 h-5"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6V8H12V10H14V8H16V6H14V4H12V6H0ZM10 2H12V4H10V2ZM10 2H8V0H10V2ZM10 12H12V10H10V12ZM10 12H8V14H10V12Z" fill="black"/>
                     </svg>
                 </Link>
             </div>
 
             {/* Right Image */}
-            <div className="flex-1 flex justify-end relative">
+            <div className="flex-1 flex mt-10 justify-end relative">
                 {/* Layer 1 */}
                 <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -bottom-[8%] -sm:bottom-[8%] -md:bottom-[10%] -right-[5%] sm:right-[8%] md:right-[15%] bg-primary/50 rounded-md z-10"></div>
 
@@ -44,6 +33,7 @@ const About = () => {
                 <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -top-[8%] -sm:top-[8%] -md:top-[10%] left-[5%] -sm:left-[8%] -md:left-[10%] bg-accent-foreground/60 rounded-md z-20"></div>
 
                 {/* Image */}
+
                 <Image
                     src={about}
                     alt="Who we are"

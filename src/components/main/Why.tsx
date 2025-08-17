@@ -45,7 +45,7 @@ const Why = () => {
 
             <section className={"flex flex-col gap-4"}>
                 <p className="text-primary text-6xl max-w-5xl  lg:text-8xl font-bold mb-4">
-                    Why Choose
+                    Why Choose<br/>
                     Tweak Professional?
                 </p>
 
@@ -55,7 +55,7 @@ const Why = () => {
                             key={index}
                             className="hover:shadow-2xl items-center justify-center  p-4 rounded-none transition-shadow flex flex-row "
                         >
-                            <div className="relative w-full h-56">
+                            <div className="relative w-full h-[20rem]">
                                 <Image
                                     src={whyImage}
                                     alt="why"
@@ -63,15 +63,15 @@ const Why = () => {
                                     className="object-cover"
                                 />
                             </div>
-                            <div className={"flex flex-col gap-4"} style={{ height: "100%"}}>
+                            <div className={"flex justify-center gap-2 flex-col "} style={{ height: "100%"}}>
                                 <CardHeader>
-                                    <CardTitle className="text-xl md:text-2xl lg:text-3xl">
+                                    <CardTitle className=" md:text-4xl text-5xl">
                                         {service.title}
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="flex gap-4">
                                     <div className="w-1 self-stretch bg-accent-foreground"></div>
-                                    <p className="text-sm md:text-base">{service.content}</p>
+                                    <p className="text-2xl">{service.content}</p>
                                 </CardContent>
                             </div>
                         </Card>

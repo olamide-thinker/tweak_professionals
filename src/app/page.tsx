@@ -9,8 +9,41 @@ import CallToAction from "@/components/CallToAction";
 import Quote from "@/components/main/Quote"
 import sectionImage from '../../public/images/main/sectionImage.png'
 // import Footer from "@/components/Footer"
+import brand from '../../public/images/brand.svg'
 
 export default function Home() {
+    const brands = [
+        {
+
+            image: brand,
+            // link: "/about"
+        },
+        {
+
+            image: brand,
+            // link: "/about"
+        },
+        {
+
+            image: brand,
+            // link: "/about"
+        },
+        {
+
+            image: brand,
+            // link: "/about"
+        },
+        {
+
+            image: brand,
+            // link: "/about"
+        },
+        {
+
+            image: brand,
+            // link: "/about"
+        }
+    ]
   return (
     <div className="">
       <main className="m-0 p-0">
@@ -24,6 +57,11 @@ export default function Home() {
               image={sectionImage}
               imageAlt="Business Growth"
               />
+          <div className={"flex flex-wrap flex-row justify-between gap-4"}>
+              {brands.map((brand, index) => (
+                  <Image src={brand.image} alt={brand.name} key={index} className="w-72"/>
+              ))}
+          </div>
           <div className={" mt-52 relative "} data-slot="">
 
               <Image

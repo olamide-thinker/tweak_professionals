@@ -68,7 +68,7 @@ const SectionWrapper = ({
 
                 {/* Right Image */}
                 {image && (
-                    <div className="relative self-start lg:self-start lg:ml-auto lg:mt-[2rem] lg:mr-[10rem]">
+                    <div className="relative justify-center  mx-auto self-start lg:self-start lg:ml-auto lg:mt-[2rem] lg:mr-[10rem]">
                         <Image
                             src={image}
                             alt={imageAlt}
