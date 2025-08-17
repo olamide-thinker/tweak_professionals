@@ -5,8 +5,6 @@ import Mission from "@/components/about/mission";
 import Team from "@/components/about/team";
 import CallToAction from "@/components/CallToAction";
 import dot from "../../../../public/images/about/dot.png";
-import sectionImage from "../../../../public/images/main/sectionImage.png";
-
 
 const Page = () => {
 

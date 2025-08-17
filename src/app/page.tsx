@@ -5,10 +5,8 @@ import About from "@/components/main/About";
 import Service   from "@/components/main/Service";
 import Why from "@/components/main/Why";
 import dot from "../../public/images/main/dot.png"
-import CallToAction from "@/components/CallToAction";
 import Quote from "@/components/main/Quote"
 import sectionImage from '../../public/images/main/sectionImage.png'
-// import Footer from "@/components/Footer"
 import brand from '../../public/images/brand.svg'
 
 export default function Home() {
@@ -59,7 +57,7 @@ export default function Home() {
               />
           <div className={"flex flex-wrap flex-row justify-between gap-4"}>
               {brands.map((brand, index) => (
-                  <Image src={brand.image} alt={brand.name} key={index} className="w-72"/>
+                  <Image src={brand.image} alt={"brand.name"} key={index} className="w-72"/>
               ))}
           </div>
           <div className={" mt-52 relative "} data-slot="">

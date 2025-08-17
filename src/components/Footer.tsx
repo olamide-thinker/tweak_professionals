@@ -3,7 +3,6 @@ import whatsapp from '../../public/images/whatsapp.svg'
 import location from '../../public/images/location.svg'
 import email from '../../public/images/email.svg'
 import link from '../../public/images/link.svg'
-import Link from "next/link";
 
 const Footer = () => {
     return (

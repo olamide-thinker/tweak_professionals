@@ -1,13 +1,14 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
 interface LinkItem {
     title: string;
-    icon: ImageData; // or React.ReactNode if you use icon components
+    icon: string | StaticImport | React.ReactNode;
     link: string;
 }
 interface CardProps {
     header: string;
-    content: string | LinkItem;
+    content: string | LinkItem[];
     action?: string;
     className?: string;
     moreSocials?: LinkItem[];
@@ -40,7 +41,7 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
                                     className="flex flex-col items-center justify-center gap-2"
                                 >
                                     <Image
-                                        src={z.icon}
+                                        src={z.icon as string | StaticImport}
                                         alt={z.title}
                                         width={64}
                                         height={64}
@@ -57,7 +58,9 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
                     <div className={'flex w-full m-0  gap-4 flex-col'}>
                         {content.map((z, index) => (
                             <div key={index} className="flex items-center justify-baseline gap-4 max-w-[20rem]">
-                                <Image src={z.icon} alt={z.title} width={24} height={24} className="w-8 h-8 "/>
+                                <Image
+                                src={z.icon as string | StaticImport}
+                                  alt={z.title} width={24} height={24} className="w-8 h-8 "/>
                                 <p className="text-xl font-light leading-relaxed">{z.link}</p>
                             </div>
                         ))}
