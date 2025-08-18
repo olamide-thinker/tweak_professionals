@@ -34,11 +34,11 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
                 )}
                 <div className="absolute bg-primary/20 rounded-lg -top-5 right-0 w-fit p-4">
                     {Array.isArray(moreSocials) && (
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid bg-[#2B2B2B] p-4 rounded-lg grid-cols-2 gap-4">
                             {moreSocials.map((z, index) => (
                                 <div
                                     key={index}
-                                    className="flex flex-col items-center justify-center gap-2"
+                                    className="flex  flex-col items-center justify-center gap-2"
                                 >
                                     <Image
                                         src={z.icon as string | StaticImport}

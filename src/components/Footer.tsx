@@ -3,6 +3,10 @@ import whatsapp from '../../public/images/whatsapp.svg'
 import location from '../../public/images/location.svg'
 import email from '../../public/images/email.svg'
 import link from '../../public/images/link.svg'
+import twitter from '../../public/images/social/twitter.svg'
+import facebook from '../../public/images/social/facebook.svg'
+import linkedin from '../../public/images/social/linkedin.svg'
+import instagram from '../../public/images/social/instagram.svg'
 
 const Footer = () => {
     return (
@@ -56,23 +60,23 @@ const Footer = () => {
                 ]}
                 moreSocials={[
                         {
-                            title: "Whatsapp",
-                            icon: whatsapp,
+                            title: "instagram",
+                            icon: instagram,
                             link: "0904532345"
                         },
                 {
-                    title: "Email",
-                    icon: email,
+                    title: "facebook",
+                    icon: facebook,
                     link: "example.email.com"
                 },
                 {
-                    title: "Address",
-                    icon: location,
+                    title: "linkedin",
+                    icon: linkedin,
                     link: "No 12 my address, my city, my country"
                 },
                     {
-                        title: "Address",
-                        icon: location,
+                        title: "twitter",
+                        icon: twitter,
                         link: "No 12 my address, my city, my country"
                     }
                     ]}
