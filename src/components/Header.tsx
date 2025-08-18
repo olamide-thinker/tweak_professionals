@@ -16,11 +16,10 @@ const Header = () => {
             <section className="flex flex-row justify-between items-center px-4 py-3">
                 {/* Logo / Brand */}
                 <Link href="/" className="text-primary leading-tight">
-                    <span className="block text-3xl md:text-5xl font-bold">Tweak</span>
-                    <span className="block text-3xl md:text-5xl font-bold">
-            Professionals
+                    <span className="block text-4xl lg:text-5xl font-bold">Tweak</span>
+                    <span className="block text-4xl lg:text-5xl font-bold">Professionals
           </span>
-                    <span className="block text-xl md:text-3xl font-normal">Consult</span>
+                    <span className="block text-3xl md:text-3xl font-normal">Consult</span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -81,7 +80,7 @@ const Header = () => {
                         <li key={index}>
                             <Link
                                 href={link.href}
-                                className="text-2xl font-medium text-primary hover:text-accent transition-colors"
+                                className="text-3xl font-medium text-primary hover:text-accent transition-colors"
                                 onClick={handleLinkClick}
                             >
                                 {link.label}
@@ -91,7 +90,7 @@ const Header = () => {
                     <li>
                         <Link
                             href="#visit"
-                            className="bg-primary text-white py-2 px-6 rounded-md font-semibold hover:bg-primary/90 transition-colors"
+                            className="bg-primary text-background text-3xl  py-2 px-6 rounded-md font-semibold hover:bg-primary/90 transition-colors"
                             onClick={handleLinkClick}
                         >
                             Tell a Friend
