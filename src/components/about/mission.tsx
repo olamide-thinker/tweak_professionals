@@ -65,7 +65,7 @@ const Mission = () => {
                             </CardHeader>
 
                             <CardContent className="flex gap-4 ml-8">
-                                <div className="block w-1 self-stretch bg-accent-foreground"></div>
+                                <div className="block w-1 self-stretch bg-primary"></div>
 
                                 <div className="md:text-3xl">
                                     {/* If content is a string */}

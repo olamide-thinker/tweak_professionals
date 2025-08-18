@@ -54,7 +54,7 @@ const Service = () => {
                 {services.map((service, index) => (
                     <Card key={index} className="hover:shadow-2xl rounded-none transition-shadow">
                         <CardHeader>
-                            <CardTitle className={" text-4xl lg:text-6xl"}>{service.title}</CardTitle>
+                            <CardTitle className={" text-4xl lg:text-5xl"}>{service.title}</CardTitle>
                             {/*<CardDescription>{service.description}</CardDescription>*/}
                         </CardHeader>
                         <CardContent  className={" flex gap-4 ml-8 max-w-md"}>

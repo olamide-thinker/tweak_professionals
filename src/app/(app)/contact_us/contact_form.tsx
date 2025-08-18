@@ -61,11 +61,11 @@ const ContactForm = () => {
                                 name="name"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-2xl">Your Name</FormLabel>
+                                        {/*<FormLabel className="text-2xl lg:text-3xl">Your Name</FormLabel>*/}
                                         <FormControl>
                                             <Input
-                                                className="h-16 text-2xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
-                                                placeholder="Enter your name"
+                                                className="h-20 text-2xl lg:text-3xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
+                                                placeholder="your name"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -79,11 +79,11 @@ const ContactForm = () => {
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-2xl">Business Email</FormLabel>
+                                        {/*<FormLabel className="text-2xl lg:text-3xl">Business Email</FormLabel>*/}
                                         <FormControl>
                                             <Input
-                                                className="h-16 text-2xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
-                                                placeholder="Enter your business email"
+                                                className="h-20 text-2xl lg:text-3xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
+                                                placeholder="your business email"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -97,11 +97,11 @@ const ContactForm = () => {
                                 name="phone_number"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-2xl">Phone Number</FormLabel>
+                                        {/*<FormLabel className="text-2xl lg:text-3xl">Phone Number</FormLabel>*/}
                                         <FormControl>
                                             <Input
-                                                className="h-16 text-2xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
-                                                placeholder="Enter your phone number"
+                                                className="h-20 text-2xl lg:text-3xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
+                                                placeholder="your phone number"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -115,11 +115,11 @@ const ContactForm = () => {
                                 name="business_name"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-2xl">Business Name</FormLabel>
+                                        {/*<FormLabel className="text-2xl lg:text-3xl">Business Name</FormLabel>*/}
                                         <FormControl>
                                             <Input
-                                                className="h-16 text-2xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
-                                                placeholder="Enter your business name"
+                                                className="h-20 text-2xl lg:text-3xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
+                                                placeholder="your business name"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -133,11 +133,11 @@ const ContactForm = () => {
                                 name="interest"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-2xl">Area of Interest</FormLabel>
+                                        {/*<FormLabel className="text-2xl lg:text-3xl">Area of Interest</FormLabel>*/}
                                         <FormControl>
                                             <Input
-                                                className="h-16 text-2xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
-                                                placeholder="What service are you interested in?"
+                                                className="h-20 text-2xl lg:text-3xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
+                                                placeholder="service interest"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -151,11 +151,11 @@ const ContactForm = () => {
                                 name="message"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-2xl">Your Message</FormLabel>
+                                        {/*<FormLabel className="text-2xl lg:text-3xl">Your Message</FormLabel>*/}
                                         <FormControl>
                                             <Textarea
-                                                className="min-h-[8rem] text-2xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
-                                                placeholder="Tell us more about your business needs..."
+                                                className="min-h-[8rem] text-2xl lg:text-3xl bg-gray-100 placeholder:text-gray-500 placeholder:text-xl"
+                                                placeholder="your message"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -167,14 +167,18 @@ const ContactForm = () => {
 
                             <div className="relative w-fit mt-8 group">
                                 {/* Background blocks */}
-                                <div className="absolute top-1 -left-2 w-full h-full bg-primary/50 rounded-md -z-10"></div>
-                                <div className="absolute -top-2 left-2 w-full h-full bg-accent-foreground rounded-md -z-20"></div>
+                                <div className="absolute top-1 -left-2 inset-0 w-full h-full bg-primary/50 rounded-md z-10"></div>
+                                <div className="absolute -top-2 left-2 inset-0 w-full h-full bg-accent  rounded-md z-20"></div>
 
                                 {/* Button */}
-                                <button type="submit" className="relative w-fit bg-black text-accent-foreground px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition flex items-center gap-2">
-                                    REQUEST A PROPOSAL <span className="inline-block">→</span>
+                                <button
+                                    type="submit"
+                                    className="relative text-2xl z-30 lg:text-3xl w-fit bg-white text-primary font-extrabold px-6 py-3 rounded-md border border-primary hover:bg-primary hover:text-accent-foreground transition flex items-center gap-2"
+                                >
+                                    SUBMIT INQUIRY <span className="ml-8 inline-block">→</span>
                                 </button>
                             </div>
+
                         </form>
                     </Form>
                 </Card>

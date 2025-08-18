@@ -105,7 +105,7 @@ const IndustrySection = () => {
                             {/* Line + Content wrapper */}
                             <CardContent className="flex gap-4 ml-6">
                                 {/* vertical line that stretches full height */}
-                                <div className="w-1 bg-accent-foreground"></div>
+                                <div className="w-1 bg-primary"></div>
 
                                 <div className="flex flex-col gap-4 text-3xl md:text-xl">
                                     {/* description */}

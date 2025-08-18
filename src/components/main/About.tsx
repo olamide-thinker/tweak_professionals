@@ -30,7 +30,7 @@ const About = () => {
                 <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -bottom-[8%] -sm:bottom-[8%] -md:bottom-[10%] -right-[5%] sm:right-[8%] md:right-[15%] bg-primary/50 rounded-md z-10"></div>
 
                 {/* Layer 2 */}
-                <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -top-[8%] -sm:top-[8%] -md:top-[10%] left-[5%] -sm:left-[8%] -md:left-[10%] bg-accent-foreground/60 rounded-md z-20"></div>
+                <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -top-[8%] -sm:top-[8%] -md:top-[10%] left-[5%] -sm:left-[8%] -md:left-[10%] bg-accent/50 rounded-md z-20"></div>
 
                 {/* Image */}
 

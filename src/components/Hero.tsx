@@ -19,7 +19,7 @@ const Hero = () => {
             {/* Content on top */}
             <section>
             <div
-                className="absolute z-10  top-[10rem]   text-primary"
+                className="absolute z-10  top-[15rem]   text-primary"
 
             >
                 <CallToAction
