@@ -43,6 +43,7 @@ const Page = () => {
                         header="Ready to Optimize Your Business?"
                         content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                         action="Request A Proposal"
+                        link={'/contact_us'}
                     />
                 </section>
             </div>
