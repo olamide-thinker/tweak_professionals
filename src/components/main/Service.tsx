@@ -81,6 +81,7 @@ const Service = () => {
                       header="Ready to Optimize Your Business?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                       action="Get A Free Consultation"
+                      link={'/contact_us'}
                   />
                   <CallToAction
                       className={"w-fit justify-around"}
@@ -88,6 +89,7 @@ const Service = () => {
                       header={`Have a \n question?`}
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                       action="Contact Us"
+                      link={'/contact_us'}
                   />
               </div>
             </section>

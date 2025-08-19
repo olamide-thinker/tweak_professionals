@@ -87,6 +87,7 @@ const Footer = () => {
             <CallToAction
                 header="Useful Links"
                 className={"w-[20rem]"}
+                link={'/'}
                 content={[
                     {
                         title: "Privacy Link",
