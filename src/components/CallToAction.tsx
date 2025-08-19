@@ -1,5 +1,6 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
+import Link from "next/link";
 
 interface LinkItem {
     title: string;
@@ -12,12 +13,13 @@ interface CardProps {
     action?: string;
     className?: string;
     moreSocials?: LinkItem[];
+    link:string
 }
 
 // const socials =
-const CallToAction = ({ header, moreSocials, className, content, action }: CardProps) => {
+const CallToAction = ({ header, link, moreSocials, className, content, action }: CardProps) => {
     return (
-        <div className={`bg-primary ${className}     text-accent-foreground  p-8 rounded-lg flex flex-col gap-6 `}>
+        <div className={`bg-primary ${className} max-w-5xl text-accent-foreground  p-8 rounded-lg flex flex-col gap-6 `}>
             {/* Header */}
             <h1 className=" max-w-xl text-6xl font-bold leading-snug ">
                 {header}
@@ -68,7 +70,8 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
                 )}
 
                 {action && (
-                    <button
+                    <Link
+                        href={`${link}`}
                         className="flex w-fit items-center gap-2 text-3xl
                   bg-transparent border border-accent-foreground
                   text-accent-foreground px-6 py-3 rounded-md
@@ -85,7 +88,7 @@ const CallToAction = ({ header, moreSocials, className, content, action }: CardP
                         >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
-                    </button>
+                    </Link>
                 )}
             </div>
         </div>

@@ -21,7 +21,7 @@ const SectionWrapper = ({
                         }: SectionWrapperProps) => {
     return (
         <section>
-            <div className="flex flex-col lg:flex-row items-start justify-between">
+            <div className="flex flex-col xl:flex-row lg:flex-row items-start justify-between">
                 {/* Left Content */}
                 <div className="relative flex -top-[55px] lg:-top-[70px] flex-col z-20">
                     {/* Heading */}

@@ -64,7 +64,7 @@ const Service = () => {
                     </Card>
                 ))}
                 <Link
-                    href="/"
+                    href="/services"
                     className="inline-flex w-fit font-bold bg-accent-foreground p-2 items-center gap-2 text-primary  hover:underline"
                 >
                     View All Services
@@ -77,7 +77,7 @@ const Service = () => {
               <div className={"flex flex-col lg:flex-row w-full mt-32 gap-4"}>
                   <CallToAction
 
-                      className={"flex-1 justify-between w-[40rem]"}
+                      className={"flex-1 justify-between "}
                       header="Ready to Optimize Your Business?"
                       content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                       action="Get A Free Consultation"

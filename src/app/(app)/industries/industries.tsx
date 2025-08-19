@@ -91,7 +91,7 @@ const IndustrySection = () => {
                     {industries.map((item, index) => (
                         <Card
                             key={index}
-                            className="hover:shadow-2xl h-fit rounded-none transition-shadow"
+                            className="hover:shadow-2xl  max-h-3xl rounded-none transition-shadow"
                         >
                             <CardHeader className="flex flex-col gap-4">
                                 <CardTitle className="text-4xl lg:text-6xl">

@@ -4,7 +4,7 @@ import about from "../../../public/images/main/about.png";
 
 const About = () => {
     return (
-        <section className="flex flex-col lg:flex-row items-center w-full justify-between lg:space-y-0 space-y-6 gap-8">
+        <section className="flex flex-col  lg:flex-row xl:flex-row sm:flex-row md:flex-row items-center w-full justify-between lg:space-y-0 space-y-6 gap-8">
             {/* Left Content */}
             <div className="flex-1 max-w-3xl">
                 <h3 className="text-primary text-6xl lg:text-8xl font-bold mb-4">Who We Are</h3>
@@ -14,7 +14,7 @@ const About = () => {
                 </p>
 
                 <Link
-                    href="/"
+                    href="/about"
                     className="inline-flex font-bold bg-accent-foreground p-2 items-center gap-2 text-primary  hover:underline"
                 >
                     Discover our story
@@ -25,19 +25,19 @@ const About = () => {
             </div>
 
             {/* Right Image */}
-            <div className="flex-1 flex mt-10 justify-end relative">
+            <div className="flex-1 relative w-full max-w-5xl flex mt-10 justify-end relative">
                 {/* Layer 1 */}
-                <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -bottom-[8%] -sm:bottom-[8%] -md:bottom-[10%] -right-[5%] sm:right-[8%] md:right-[15%] bg-primary/50 rounded-md z-10"></div>
+                <div className="absolute w-[55%]   h-16 sm:h-20 md:h-24 -bottom-[8%] -right-[8%]  bg-primary/50 rounded-md z-10"></div>
 
                 {/* Layer 2 */}
-                <div className="absolute w-[50%] sm:w-[65%] md:w-[50%] h-16 sm:h-20 md:h-24 -top-[8%] -sm:top-[8%] -md:top-[10%] left-[5%] -sm:left-[8%] -md:left-[10%] bg-accent/50 rounded-md z-20"></div>
+                <div className="absolute w-[55%]  h-16 sm:h-20 md:h-24 -top-[8%] left-[20%] bg-accent/50 rounded-md z-20"></div>
 
                 {/* Image */}
 
                 <Image
                     src={about}
                     alt="Who we are"
-                    className="relative w-full max-w-5xl h-auto object-cover rounded-md"
+                    className=" h-auto object-cover rounded-md"
                 />
             </div>
         </section>

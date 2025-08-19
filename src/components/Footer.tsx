@@ -34,13 +34,15 @@ const Footer = () => {
 
             <CallToAction
                 header="Join Our News Letter"
-                className={"flex-1 w-[40rem]"}
+                className={"flex-1 "}
+                link={'/contact_us'}
                 content="Partner with Tweak Professional to unlock your organization's potential and achieve strategic objectives."
                 action="Request A Proposal"
             />
             <CallToAction
                 header="Reach Us Today"
-                className={"flex-1 w-[40rem] "}
+                className={"flex-1  "}
+                link={'/contact_us'}
                 content={[
                     {
                         title: "Whatsapp",

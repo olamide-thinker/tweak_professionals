@@ -12,7 +12,7 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <header className="fixed top-0 left-0 w-full bg-background shadow-md z-50">
             <section className="flex flex-row justify-between items-center px-4 py-3">
                 {/* Logo / Brand */}
                 <Link href="/" className="text-primary leading-tight">

@@ -53,13 +53,14 @@ const Why = () => {
                     {why.map((service, index) => (
                         <Card
                             key={index}
-                            className="hover:shadow-2xl items-center justify-center  p-4 rounded-none transition-shadow flex flex-row "
+                            className="hover:shadow-2xl flex flex-col lg:flex-row xl:flex-row sm:flex-row md:flex-row justify-center  items-center  p-4 rounded-none transition-shadow  "
                         >
-                            <div className="relative w-full h-[20rem]">
+                            <div className=" flex mx-auto justify-center  w-full ">
                                 <Image
                                     src={whyImage}
                                     alt="why"
-                                    fill
+                                    width={200}
+
                                     className="object-cover"
                                 />
                             </div>

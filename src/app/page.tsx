@@ -51,7 +51,7 @@ export default function Home() {
               highlight="Tweak Professional:"
               description="Your Partner in Human Capital Development, Recruitment, and Strategic Business Excellence."
               buttonText="REQUEST A PROPOSAL"
-              buttonHref="/contact"
+              buttonHref="/contact_us"
               image={sectionImage}
               imageAlt="Business Growth"
               />
