@@ -27,10 +27,10 @@ const About = () => {
             {/* Right Image */}
             <div className="flex-1 relative w-full max-w-5xl flex mt-10 justify-end relative">
                 {/* Layer 1 */}
-                <div className="absolute w-[55%]   h-16 sm:h-20 md:h-24 -bottom-[8%] -right-[8%]  bg-primary/50 rounded-md z-10"></div>
+                <div className="absolute w-[55%]   h-16 sm:h-20 md:h-24 -bottom-[8%] right-[2%]  bg-primary/50 rounded-md z-10"></div>
 
                 {/* Layer 2 */}
-                <div className="absolute w-[55%]  h-16 sm:h-20 md:h-24 -top-[8%] left-[20%] bg-accent/50 rounded-md z-20"></div>
+                <div className="absolute w-[55%]  h-16 sm:h-20 md:h-24 -top-[8%] left-[5%] bg-accent/50 rounded-md z-20"></div>
 
                 {/* Image */}
 

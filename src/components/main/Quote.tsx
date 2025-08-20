@@ -1,3 +1,4 @@
+"use client"
 import * as React from "react"
 import {
     Carousel,
@@ -6,6 +7,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay";
 
 type QuoteType = {
     text: string
@@ -15,7 +17,7 @@ type QuoteType = {
 const quotes: QuoteType[] = [
     {
         text: "We design bespoke strategies that precisely align with your unique business challenges and goals.",
-        author: "Olumide Emmanuel",
+        author: "Olumide ",
     },
     {
         text: "We design bespoke strategies that precisely align with your unique business challenges and goals.",
@@ -23,18 +25,29 @@ const quotes: QuoteType[] = [
     },
     {
         text: "We design bespoke strategies that precisely align with your unique business challenges and goals.",
-        author: "Olumide Emmanuel",
+        author: " Emmanuel",
+    },
+    {
+        text: "We design bespoke strategies that precisely align with your unique business challenges and goals.",
+        author: "Olumide kola Emmanuel",
     },
 ]
 
+
 export function Quote() {
+    const autoPlay = React.useRef(
+        Autoplay({delay: 4000, stopOnInteraction: true})
+    )
     return (
         <section>
         <div className="  m-10  lg:mx-auto flex flex-col gap-4 mt-20 px-4">
             <p className="text-primary text-4xl sm:text-6xl max-w-5xl lg:text-8xl font-bold mb-4">
                 What they said <br/> about us
             </p>
-            <Carousel opts={{ align: "start" }} className="w-full">
+            <Carousel
+                opts={{ align: "start" }}
+                plugins={[autoPlay.current]}
+                className="w-full">
                 <CarouselContent>
                     {quotes.map((quote, index) => (
                         <CarouselItem

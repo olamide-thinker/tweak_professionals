@@ -44,12 +44,13 @@ const Hero = () => {
                 <div className="mt-8 w-full max-w-5xl">
                     <NoAction
                         content={[
-                            "Your Partner in Human Capital, Recruitment, and Strategic Business Excellence.",
-                            "Your Partner in Human Capital, Recruitment, and Strategic Business Excellence.",
-                            "Your Partner in Human Capital, Recruitment, and Strategic Business Excellence.",
-                            "Your Partner in Human Capital, Recruitment, and Strategic Business Excellence.",
+                            "Connecting top talent with forward-thinking organizations.",
+                            "Transforming human capital into a driver of business growth.",
+                            "Recruitment solutions tailored for your industry and culture.",
+                            "Empowering businesses with strategic workforce excellence.",
                         ]}
                     />
+
                 </div>
             </section>
         </div>
